@@ -18,8 +18,8 @@ connectDB();
 app.use(express.json()); // To parse JSON bodies
 
 const allowedOrigins = [
-  'https://ultraflyb2b.netlify.app/',  // Production frontend
-  'http://localhost:5173'  // Development frontend
+  'https://ultraflyb2b.netlify.app' // Production frontend
+  // 'http://localhost:5173'  // Development frontend
 ];
 // const corsOrigin =  'http://localhost:5173'; // Fallback to localhost in development
 
@@ -56,7 +56,7 @@ const server = app.listen(PORT, () => {
 // chat
 const io = socket(server, {
   cors: {
-    origin:'https://ultraflyb2b.netlify.app/' ,
+    origin:'https://ultraflyb2b.netlify.app',
     credentials: true,
   },
 });
