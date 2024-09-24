@@ -18,7 +18,7 @@ connectDB();
 app.use(express.json()); // To parse JSON bodies
 
 const allowedOrigins = [
-  'https://b2bultrafly.netlify.app/' // Production frontend
+  'https://b2bultrafly.netlify.app' // Production frontend
   // 'http://localhost:5173'  // Development frontend
 ];
 // const corsOrigin =  'http://localhost:5173'; // Fallback to localhost in development
@@ -56,7 +56,7 @@ const server = app.listen(PORT, () => {
 // chat
 const io = socket(server, {
   cors: {
-    origin:'https://b2bultrafly.netlify.app/',
+    origin:'https://b2bultrafly.netlify.app',
     credentials: true,
   },
 });
