@@ -18,8 +18,8 @@ connectDB();
 app.use(express.json()); // To parse JSON bodies
 
 const allowedOrigins = [
-  'https://starlit-bunny-2d6d9ab.netlify.app',  // Production frontend
-  'http://localhost:5173'  // Development frontend
+  'https://b2bultrafly.netlify.app/',  // Production frontend
+  // 'http://localhost:5173'  // Development frontend
 ];
 // const corsOrigin =  'http://localhost:5173'; // Fallback to localhost in development
 
@@ -56,7 +56,7 @@ const server = app.listen(PORT, () => {
 // chat
 const io = socket(server, {
   cors: {
-    origin:'https://starlit-bunny-2d6d9a.netlify.app' ,
+    origin:'https://b2bultrafly.netlify.app/' ,
     credentials: true,
   },
 });
